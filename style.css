@@ -1,0 +1,1418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  background-color: rgb(209, 212, 216);
+  box-shadow: 2px 4px #888888;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style-type: none;
+  padding: 0px 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(35, 84, 84);
+  transition: 0.3s ease;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: cornflowerblue;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  background-color: rgb(21, 97, 168);
+}
+
+/* home page style */
+#home-top-section {
+  height: 90vh;
+  /* width: 100%; */
+  padding: 15px;
+  background-image: url("/ecom-tutorial/banner.avif");
+  background-size: cover;
+  background-position: top 20% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#home-top-section h4 {
+  padding-bottom: 10px;
+  font-family: cursive;
+  color: beige;
+}
+
+#home-top-section h2 {
+  font-size: 36px;
+}
+#home-top-section h1 {
+  font-size: 48px;
+  color: brown;
+  padding-bottom: 10px;
+}
+
+#home-top-section p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+  color: blanchedalmond;
+}
+
+#spanele {
+  font-weight: 600;
+  font-style: italic;
+  color: darkred;
+  font-size: 22px;
+}
+
+#home-top-section button {
+  padding: 12px 40px 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border: 0;
+  color: beige;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: brown;
+  cursor: pointer;
+}
+
+#home-top-section button:hover {
+  background-color: #088178;
+  color: #cce7d0;
+}
+
+.shipping-img {
+  height: 90px;
+  width: 90px;
+}
+
+.section-padding {
+  padding: 40px 80px;
+}
+
+#feature-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#feature-section .feature-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 18px 18px 42px rgb(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+#feature-section .feature-box:hover {
+  box-shadow: 10px 10px 54px rgb(90, 72, 321, 0.1);
+}
+
+#feature-section .feature-box h6 {
+  background-color: chocolate;
+  padding: 9px 8px 9px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgb(224, 229, 233);
+}
+
+#feature-section .feature-box:nth-child(2) h6 {
+  background-color: brown;
+}
+
+#feature-section .feature-box:nth-child(3) h6 {
+  background-color: darkslategrey;
+}
+#feature-section .feature-box:nth-child(4) h6 {
+  background-color: rgb(62, 182, 142);
+}
+
+#feature-section .feature-box:nth-child(5) h6 {
+  background-color: rgb(18, 167, 83);
+}
+
+#feature-section .feature-box:nth-child(6) h6 {
+  background-color: rgb(13, 207, 49);
+}
+
+/* product section */
+.pro-img {
+  height: 190px;
+  width: 190px;
+}
+
+#product-section {
+  text-align: center;
+}
+
+#product-section h2 {
+  color: rgb(35, 27, 27);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+#product-section h4 {
+  font-size: 12px;
+  font-family: serif;
+  color: green;
+}
+
+#product-section .product-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#product-section .product1 {
+  width: 30%;
+  max-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  margin: 30px 0;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: 0.03 ease;
+  position: relative;
+}
+
+#product-section .product1:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+#product-section .product1 .pro-desc {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product-section .product1 .pro-desc span {
+  color: rgb(140, 34, 15);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#product-section .product1 .pro-desc h5 {
+  margin: 5px 0;
+  font-size: 14px;
+  color: rgb(24, 9, 54);
+}
+
+#product-section .product1 .pro-desc i {
+  color: darkgoldenrod;
+  font-size: 12px;
+}
+
+#product-section .product1 .pro-desc h4 {
+  padding-top: 7px;
+  color: rgb(10, 144, 148);
+  font-weight: 700;
+}
+
+#product-section .product1 .cart {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(184, 212, 213);
+  color: dodgerblue;
+  line-height: 40px;
+  border-radius: 50px;
+  border: 1px solid #888888;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+/* banner */
+
+.banner-padding {
+  padding: 40px 0;
+}
+
+#banner-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("https://img.freepik.com/premium-vector/3d-blue-balloons-background-celebration-product-presentation-show-cosmetic-product-podium_716564-166.jpg");
+  width: 100%;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#banner-offer h4 {
+  color: rgb(186, 189, 214);
+  font-size: 14px;
+  font-family: cursive;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+#banner-offer h2 {
+  color: #bcdee4;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#banner-offer h2 span {
+  color: #d24120;
+  font-style: italic;
+  font-size: 28px;
+}
+
+#banner-offer button {
+  padding: 14px 12px 14px 12px;
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: rgb(19, 59, 168);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.02;
+}
+
+#banner-offer button:hover {
+  background-color: #088178;
+  color: #fff;
+}
+
+.bottom-banner-padding {
+  padding: 40px 0;
+}
+
+#bottom-banner .bottom-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url("https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses_285396-641.jpg?w=900&t=st=1693576519~exp=1693577119~hmac=f8fef91c19605ea0fc551d872f6949249a8489365e5eacffb9aea37044892025");
+  min-width: 580px;
+  height: 50vh;
+  padding: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+#bottom-banner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#bottom-banner h4 {
+  color: #d5dcd6;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+#bottom-banner h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  color: #e3eded;
+  margin-bottom: 4px;
+}
+
+#bottom-banner span {
+  color: #ddd4af;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#bottom-banner button {
+  padding: 9px 9px 8px 8px;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  margin-top: 8px;
+  color: #b0cac5;
+  cursor: pointer;
+  font-size: 13px;
+  background-color: transparent;
+  transition: 0.02s;
+}
+
+#bottom-banner button:hover {
+  background-color: cadetblue;
+  color: #ffffff;
+}
+
+.bottom-box {
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+#bottom-banner .bottom-box2 {
+  background-image: url("https://img.freepik.com/free-photo/bearded-man-dressed-black-posing_273609-14201.jpg?w=900&t=st=1693587938~exp=1693588538~hmac=8e039d8fc557ffeac24f52e4b7825ce436a353804eb755eb94e0cd29fdaf4e38");
+}
+
+#bottom-section3 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#bottom-section3 .bottom-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url("https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses_285396-641.jpg?w=900&t=st=1693576519~exp=1693577119~hmac=f8fef91c19605ea0fc551d872f6949249a8489365e5eacffb9aea37044892025");
+  min-width: 30%;
+  height: 30vh;
+  padding: 20px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+#bottom-section3 .bottom-box-3 {
+  background-image: url("https://img.freepik.com/free-photo/happy-young-man-going-shopping-holding-bags-looking-excited-standing-orange-sweater-blue_1258-149813.jpg?w=900&t=st=1693628774~exp=1693629374~hmac=2c6cd2ef89740d4ca5f60288ecd73bc12d71fe6acdac1a321ce48b170cbd2b44");
+}
+
+#bottom-section3 .bottom-box-4 {
+  background-image: url("https://i.pinimg.com/originals/a7/1e/11/a71e115eee79fdc3b02aa458d0d12359.jpg");
+}
+
+#bottom-section3 .bottom-box-5 {
+  background-image: url("https://img.freepik.com/free-photo/cheerful-young-man-nightclub_158595-4882.jpg?w=900&t=st=1693629333~exp=1693629933~hmac=0c46d5799004815cdc3a5fa5c87ba6cdd9b20d8d526d9e8704720ffc88f03a0c");
+}
+
+#bottom-section3 h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+#bottom-section3 h3 {
+  color: #f4d41b;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.bottom-padding {
+  padding: 16px;
+}
+
+#news-letter-section .form {
+  display: flex;
+  width: 40%;
+}
+
+.news-letter-padding {
+  padding: 40px;
+  margin: 20px;
+}
+
+#news-letter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=900&t=st=1693630178~exp=1693630778~hmac=364c0c5a7b108d17ba5c5f6bab7414829378df1632751646937be234aaa81d25");
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+}
+
+#news-letter-section h4 {
+  font-size: 22px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 6px;
+}
+
+#news-letter-section p {
+  color: #cce7d0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#news-letter-section p span {
+  color: hsla(51, 93%, 47%, 0.966);
+}
+
+#news-letter-section input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#news-letter-section button {
+  padding: 9px 9px 8px 8px;
+  border: 1px solid #fff;
+  width: 40%;
+  outline: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  color: #b0cac5;
+  cursor: pointer;
+  font-size: 13px;
+  background-color: transparent;
+  transition: 0.02s;
+}
+
+#news-letter-section button:hover {
+  background-color: #307769;
+  color: hwb(0 79% 18%);
+}
+
+.logo2 {
+  width: 30%;
+  height: 90px;
+}
+
+.footer-padding {
+  padding: 40px 0;
+}
+
+.app-logo {
+  width: 20%;
+  height: 70px;
+}
+
+.payment-img {
+  width: 30%;
+}
+
+#footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#footer-section .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+#footer-section h4 {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  color: #5b5959;
+}
+
+#footer-section p {
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#footer-section a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #7d7171;
+  margin-bottom: 10px;
+  font-weight: 000;
+}
+
+#footer-section i {
+  color: blue;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+#footer-section .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+#footer-section .install img {
+  margin: 10px 0 10px 0;
+}
+
+#footer-section .follow i:hover {
+  color: #9e0e0e;
+}
+
+#footer-section .col a:hover {
+  color: cornflowerblue;
+}
+
+.copyright {
+  margin: 10px 0 20px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5e5c5c;
+  text-align: center;
+}
+
+/* Medium screen devices Medium screen devices Medium screen devices Medium screen devices Medium screen devices  */
+@media (max-width: 799px) {
+  .section-padding {
+    padding: 20px 20px;
+  }
+
+  #product-section .product-container {
+    justify-content: center;
+  }
+
+  #product-section .product1 {
+    margin: 30px;
+  }
+
+  #banner-offer {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 30vh;
+  }
+
+  #bottom-banner .bottom-box {
+    min-width: 100%;
+    height: 40vh;
+  }
+
+  .bottom-banner-padding {
+    margin: 50px;
+  }
+
+  #bottom-section3 .bottom-box {
+    padding: 15px 15px;
+  }
+
+  #bottom-section3 .bottom-box {
+    width: 26%;
+  }
+
+  #bottom-section3 {
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .bottom-padding {
+    padding: 30px;
+  }
+
+  .news-letter-padding {
+    height: 20vh;
+  }
+
+  #news-letter-section .form {
+    display: flex;
+    width: 70%;
+    margin-top: 8px;
+  }
+
+  #footer-section {
+    margin: 60px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.02);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 20px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+  #mobile i {
+    color: #7d7171;
+    font-size: 24px;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 24px;
+    color: #5e5959;
+  }
+  #lg-bag {
+    display: none;
+  }
+
+  #home-top-section {
+    padding: 0 80px;
+    height: 70vh;
+    background-position: top 30% right 30%;
+  }
+  #feature-section {
+    justify-content: center;
+  }
+
+  #feature-section .feature-box {
+    margin: 15px 15px;
+  }
+  /* Contact page style */
+  #form-header {
+    padding: 40px;
+  }
+  #contact-details .map {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* extra small screeen devices small scree devices devices small scree devices devices small scree devices */
+@media screen and (max-width: 477px) {
+  .section-padding {
+    padding: 20px;
+  }
+
+  #feature-section .feature-box {
+    width: 180px;
+    margin: 0px 0px 15px 0px;
+  }
+
+  #feature-section {
+    display: flex;
+
+    justify-content: center;
+  }
+
+  #product-section .product-container {
+    justify-content: space-between;
+  }
+
+  #product-section .product1 {
+    width: 100%;
+    background-position: center;
+  }
+
+  #product-section .product-container {
+    justify-content: center;
+  }
+
+  #product-section .product1 {
+    margin: 10px;
+    padding: 30px;
+  }
+
+  #banner-offer h2 {
+    font-size: 18px;
+  }
+
+  #banner-offer h2 span {
+    font-size: 24px;
+  }
+
+  #bottom-banner h2 {
+    font-size: 28px;
+  }
+
+  #bottom-section3 .bottom-box {
+    width: 100%;
+  }
+
+  #news-letter-section {
+    height: 30vh;
+  }
+
+  #news-letter-section .form {
+    width: 100%;
+  }
+
+  #header {
+    padding: 10px 30px;
+  }
+
+  #home-top-section {
+    padding: 0px 20px;
+    background-position: 75%;
+  }
+
+  #home-top-section h2 {
+    font-size: 36px;
+    color: #f0f1f0;
+  }
+  #home-top-section h1 {
+    color: rgb(12, 75, 137);
+  }
+  /* single product page style */
+  #individual-product {
+    display: flex;
+    flex-direction: column;
+  }
+  #individual-product .single-pro-img {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #individual-product .single-product-details {
+    width: 100%;
+  }
+
+  /* blog page for small screen devices */
+  #shop-header.contact-header {
+    padding: 90px;
+  }
+  #shop-header h2 {
+    margin-right: 110px;
+    font-size: 20px;
+  }
+
+  #shop-header p {
+    font-size: 13px;
+    margin-right: 4px;
+  }
+
+  #blog {
+    padding: 20px 10px 0px 10px;
+  }
+
+  #blog .blog-box1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #blog .blogimg {
+    height: 300px;
+    width: 80vw;
+  }
+
+  #blog .blog-box1 {
+    padding-bottom: 10px;
+  }
+
+  #blog .blog-details {
+    height: 100px;
+    width: 80vw;
+  }
+
+  /* about us stying for small screen devices */
+  #about-us-head {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-us-head img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  /* Contact details style for small devices */
+  #contact-details {
+    flex-direction: column;
+  }
+  #contact-details .details {
+    width: 100%;
+  }
+  #contact-details .map {
+    width: 100%;
+  }
+  #form-header {
+    padding: 30px 10px;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #form-header form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* cart media query */
+  #cart-add {
+    flex-direction: column;
+  }
+  #coupon {
+    width: 100%;
+  }
+  #subtotal {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* Shop page styling */
+#shop-header {
+  background-image: url("https://img.freepik.com/premium-photo/jumping-high-portrait-young-beautiful-woman-neon-light-dark-studio-backgound-with-lettering-sale-human-emotions-black-friday-cyber-monday-purchases-sales-finance-copyspace_489646-2449.jpg?w=996");
+  height: 30vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 190px;
+}
+
+#shop-header h2 {
+  color: #ffffff;
+}
+
+#shop-header p {
+  color: #ffffff;
+}
+
+#shop-header p span {
+  color: #0f971a;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  background-color: blue;
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* product details styles */
+#individual-product {
+  display: flex;
+  margin-top: 20px;
+}
+
+#individual-product .single-pro-img {
+  /* min-width: 100%;
+  max-width: 500px; */
+  margin-right: 50px;
+}
+
+#individual-product .single-pro-img img {
+  width: 100%;
+  max-height: 50vh;
+}
+
+#individual-product .single-product-details {
+  /* min-width: 100%;
+  max-width: 550px; */
+  padding-top: 30px;
+}
+
+#individual-product .small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+#individual-product .small-img-group img {
+  height: 20vh;
+}
+
+#individual-product .small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#individual-product .single-product-details h4 {
+  padding: 40px 0px 20px 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-bottom: 8px;
+  padding-top: 30px;
+}
+
+#individual-product .single-product-details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#individual-product .single-product-details h1 {
+  font-size: 26px;
+  padding: 8px 0 8px 0;
+}
+
+#individual-product .single-product-details select {
+  display: block;
+  font-size: 12px;
+  padding: 5px 6px 5px 6px;
+  border-radius: 2px;
+  margin-bottom: 6px;
+}
+
+#individual-product .single-product-details input {
+  font-size: 16px;
+  width: 50px;
+  margin-right: 10px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.btn {
+  height: 40px;
+  font-size: 12px;
+  margin-right: 10px;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #cac6c6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#individual-product .single-product-details button {
+  background-color: #307769;
+  color: #fff;
+}
+
+#individual-product .single-product-details p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* blog page styles */
+#shop-header.blog-header {
+  background-image: url("https://img.freepik.com/free-photo/high-angle-desktop-with-laptop-copy-space_23-2148430882.jpg?w=900&t=st=1693827170~exp=1693827770~hmac=c2ed5207b538978665c96030265907f8abf07c2e532e99440155f471aed9f089");
+  background-size: cover;
+  border-bottom: center;
+}
+
+#blog {
+  padding: 120px 120px 0px 120px;
+  margin-bottom: 25px;
+}
+
+#blog .blog-box1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+#blog .blog-img-container {
+  margin-right: 40px;
+}
+
+.blogimg {
+  height: 50vh;
+  width: 40vw;
+}
+
+#blog .blog-details {
+  width: 90vw;
+  margin-top: 10px;
+}
+
+/* #blog .blog-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+} */
+
+#blog .blog-details a {
+  text-decoration: none;
+  font-size: 11px;
+  color: cornflowerblue;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+#blog .blog-details h4 {
+  font-size: 14px;
+  color: #088178;
+  margin-bottom: 8px;
+}
+#blog .blog-details p {
+  font-size: 12px;
+  color: #478681;
+  margin-bottom: 4px;
+}
+
+#blog .blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+#blog .blog-details a:hover::after {
+  background-color: #088178;
+}
+
+#blog .blog-details a:hover {
+  background-color: #088178;
+}
+
+#blog .blog-box1 h1 {
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  font-size: 50px;
+  font-weight: 600;
+  color: #888888;
+  z-index: -9;
+}
+
+/* about us page styles */
+#shop-header.about-header {
+  background-image: url("https://img.freepik.com/free-photo/confident-business-people-standing-together_53876-98344.jpg?w=900&t=st=1693844562~exp=1693845162~hmac=f0e61e661b1b096aaadbcc3619d16679271c0b0a499ed8471449d8df42a45093");
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#about-us-head {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#about-us-head img {
+  width: 100%;
+  min-width: 50%;
+  height: auto;
+}
+
+#about-us-head.about-details {
+  padding-left: 40px;
+}
+
+#about-us-head .about-details h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #3d3a3a;
+}
+
+#about-us-head .about-details p {
+  font-size: 14px;
+  font-family: unset;
+}
+
+#about-app {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#about-app h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#about-app img {
+  width: 50%;
+  height: 100%;
+  margin-top: 30px;
+}
+
+/* contact us page styles */
+
+#contact-details {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+#shop-header.contact-header {
+  background-image: url("https://img.freepik.com/premium-photo/contact-us-hand-man-holding-mobile-smartphone-with-mail-phone-email-chat-icon-cutomer-support-concept-blue-wide-banner_256259-3866.jpg?w=900");
+  height: 30vh;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#contact-details .details {
+  min-width: 40%;
+  margin-bottom: 20px;
+}
+
+#contact-details .details span,
+#form-header form span {
+  font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-header form h2 {
+  font-size: 24px;
+  line-height: 35px;
+  padding: 20px 0px;
+}
+
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+#contact-details .details li {
+  list-style-type: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
+
+#contact-details .details li p {
+  margin: 0px;
+  font-size: 14px;
+}
+
+#contact-details .map {
+  min-width: 50%;
+  height: 400px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* form details styles */
+#form-header {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  padding: 60px;
+  border: 1px solid #bcdee4;
+}
+
+#form-header form {
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-header form input,
+#form-header form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #c8c2c2;
+}
+
+#form-header form button {
+  background-color: #088178;
+  color: #fff;
+}
+
+#form-header .members-list div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#form-header .members-list div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#form-header .members-list div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+#form-header .members-list div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3d3a3a;
+}
+
+/* Cart page styling */
+#cart {
+  overflow-x: scroll;
+}
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 70px;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 60px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+  border: 1px solid #acf4b7;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table tbody tr td {
+  padding-top: 15px;
+}
+
+#cart table tbody td {
+  font-size: 13px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupon {
+  min-width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #c7c5c5;
+}
+
+#coupon button,
+#subtotal button {
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+#subtotal {
+  min-width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #cac6c6;
+  padding: 30px;
+}
+
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td {
+  min-width: 50%;
+  border: 1px solid #cce7d0;
+  padding: 10px;
+  font-size: 13px;
+}
