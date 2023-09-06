@@ -73,7 +73,7 @@
   height: 90vh;
   /* width: 100%; */
   padding: 15px;
-  background-image: url("/ecom-tutorial/banner.avif");
+  background-image: url("../ecom-tutorial/banner.avif");
   background-size: cover;
   background-position: top 20% right 0;
   padding: 0 80px;
